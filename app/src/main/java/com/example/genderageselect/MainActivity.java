@@ -14,7 +14,7 @@ import me.mutasem.booleanselection.BooleanSelectionView;
 public class MainActivity extends AppCompatActivity {
 
     BooleanSelectionView gender;
-    String sGender;
+    String sGender="남자;
     String sAge;
 
     @Override
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Gender selector
         gender = findViewById(R.id.gender);
-        gender.setSelection(BooleanSelectionView.Selection.End);
+        gender.setSelection(BooleanSelectionView.Selection.Start);
         gender.setSelectionListener(new BooleanSelectionView.SelectionListener() {
             @Override
             public void onSelectionChanged(int selection, String selectedText) {
